@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agendamento realizado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-success text-white">
+
+<div class="container mt-5">
+    <h2>Agendamento realizado com sucesso!</h2>
+
+    <h4 class="mt-4">Paciente</h4>
+    <p>{{nome}} {{sobrenome}}</p>
+    <p>CPF: {{cpf}}</p>
+    <p>Nascimento: {{dataNascimento}}</p>
+    <p>Telefone: {{telefone}}</p>
+    <p>Endereço: {{endereco}} - {{cep}}</p>
+
+    <h4 class="mt-4">Consulta</h4>
+    <p>Clínica: {{clinica}}</p>
+    <p>Especialidade: {{especialidade}}</p>
+    <p>Data: {{dataConsulta}}</p>
+    <p>Hora: {{horaConsulta}}</p>
+    <p>Observação: {{observacao}}</p>
+
+    <a href="/" class="btn btn-light mt-3">Novo agendamento</a>
+</div>
+
+</body>
+</html>

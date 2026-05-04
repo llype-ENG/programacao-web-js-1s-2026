@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agendamento</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark text-white">
+
+<div class="container mt-5">
+    <h2>Agendamento de Consulta</h2>
+
+    <form action="/agendamento" method="POST">
+
+        <h4 class="mt-4">Dados do paciente</h4>
+        <div class="row">
+            <div class="col-md-6">
+                <input class="form-control mb-2" name="nome" placeholder="Nome">
+            </div>
+            <div class="col-md-6">
+                <input class="form-control mb-2" name="sobrenome" placeholder="Sobrenome">
+            </div>
+        </div>
+
+        <input class="form-control mb-2" name="cpf" placeholder="CPF">
+        <input class="form-control mb-2" type="date" name="dataNascimento">
+        <input class="form-control mb-2" name="telefone" placeholder="Telefone">
+
+        <div class="row">
+            <div class="col-md-6">
+                <input class="form-control mb-2" name="cep" placeholder="CEP">
+            </div>
+            <div class="col-md-6">
+                <input class="form-control mb-2" name="endereco" placeholder="Endereço">
+            </div>
+        </div>
+
+        <h4 class="mt-4">Dados da consulta</h4>
+
+        <select class="form-control mb-2" name="clinica">
+            <option value="">Selecione a clínica</option>
+            <option>Clínica A</option>
+            <option>Clínica B</option>
+        </select>
+
+        <select class="form-control mb-2" name="especialidade">
+            <option value="">Especialidade</option>
+            <option>Cardiologia</option>
+            <option>Dermatologia</option>
+        </select>
+
+        <textarea class="form-control mb-2" name="observacao" placeholder="Observação"></textarea>
+
+        <div class="row">
+            <div class="col-md-6">
+                <input class="form-control mb-2" type="date" name="dataConsulta">
+            </div>
+            <div class="col-md-6">
+                <input class="form-control mb-2" type="time" name="horaConsulta">
+            </div>
+        </div>
+
+        <button class="btn btn-light w-100 mt-3">Enviar</button>
+    </form>
+</div>
+
+</body>
+</html>
